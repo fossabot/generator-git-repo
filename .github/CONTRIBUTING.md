@@ -1,15 +1,12 @@
 # Contributing to `generator-git-repo`
-
-> Contributions are stories with a beginning, a middle, and an end, all told through JIRA issues and Git pull requests.
+> [![PRs Welcome][makeapullrequest-image]][makeapullrequest-url] Contributions are stories with a beginning, a middle, and an end, all told through issues, comments, commit logs, and pull requests.
 
 ## 1. Table of contents
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [1. Table of contents](#1-table-of-contents)
-- [2. User Stories and sub-tasks](#2-user-stories-and-sub-tasks)
+- [2. "User Story" issues and defects](#2-user-story-issues-and-defects)
 - [3. Topic branches](#3-topic-branches)
-	- [3.1. Step-by-step instructions: create a topic branch](#31-step-by-step-instructions-create-a-topic-branch)
-	- [3.2. Valid branch prefix names](#32-valid-branch-prefix-names)
 - [4. Pull requests (PRs)](#4-pull-requests-prs)
 - [5. `conventional commit messages` and change `types`](#5-conventional-commit-messages-and-change-types)
 	- [5.1. `build` commit messages](#51-build-commit-messages)
@@ -29,83 +26,17 @@
 
 <!-- /TOC -->
 
-## 2. User Stories and sub-tasks
-
-> Assign yourself an open User Story or sub-task from the [JIRA Developer Portal Epic][jira-dp-epic-url] to begin collaboration.
+## 2. "User Story" issues and defects
+> [Submit a new issue][issues-new-url] or [assign yourself an open issue][issues-url] to begin collaboration.
 
 Contributions start with clear communication, and issues – not e-mails! – are the best way to collaborate with colleagues.
 
-Besides, whenever you save a comment or an edit to an issue, the right stakeholders will be notified.
-
 ## 3. Topic branches
-> Use JIRA User Stories and sub-tasks to create topic branches.
 
-### 3.1. Step-by-step instructions: create a topic branch
+We use "topic" branches to allow for parallel product development. Once you've committed to working on an issue, follow these steps.
 
-We use "topic" branches to allow for parallel product development. Once you've committed to working on a User Story (or one of its sub-tasks), follow these steps.
-
-> **Prerequisite development software required**
+> ##### :information_source: Valid branch prefix names
 >
-> Before following these steps, make to [Install prerequisite software for Apigee Developer Portal development](https://oneconfluence.verizon.com/x/qe1SDQ), first.
-
-3.1.1. Open the JIRA User Story (or sub-task) in a Web browser.
-
-3.1.2. In the right navigation page, select "Development: Create branch":
-
-![Create a new topic branch from a JIRA issue][readme-jira-issue-create-branch-image]
-
-3.1.3. Select the correct Git repository and topic based on the type of issue you're addressing:
-
-![Create new branch dialog][readme-bitbucket-create-branch-image]
-
-3.1.4. Clone the repository to your workstation (if you haven't already):
-
-```sh
-
-$ git clone ssh://git@onestash.verizon.com:7999/gtsap/generator-git-repo.git
-
-```
-
-3.1.5. Install quality checking dependencies:
-
-```sh
-
-$ npm install
-
-```
-
-3.1.6. Fetch all branches:
-
-```sh
-
-$ git fetch --all
-
-```
-
-3.1.7. Checkout out your new topic branch
-
-```sh
-
-$ git checkout feature/ONEAPI-135-api-summary-section
-
-```
-
-3.1.8. Open your IDE and get to work! :)
-
-3.1.9. Commit and push your changes:
-
-```sh
-
-$ git add .
-$ git commit -m "feat(api-summary): show latest api version
-
-ONEAPI-135"
-
-$ git push origin feature/ONEAPI-135-api-summary-section
-
-```
-
-### 3.2. Valid branch prefix names
 > Topic branches must start with either one of the conventional commit types or a valid Bitbucket branch prefix.
 
 The following branch prefixes are allowed.
@@ -156,41 +87,25 @@ The following branch prefixes are allowed.
     * **Example**: test/ONEAPI-330-setup-scm
     * **Regular expression**: `^test\/(.*){1,255}$`
 
-> Not sure whether your branch name will be rejected? [Test your branch name][branch-name-test-url] against the regular expressions below in a Web browser.
+> :microscope: Not sure whether your branch name will be rejected? [Test your branch name][branch-name-test-url] against the regular expressions below in a Web browser.
 
 ## 4. Pull requests (PRs)
+> [Submit a pull request (PR)][pr-url] immediately after your first push to `origin`.
 
-> Submit a pull request (PR) immediately after your first push to `origin`.
+4.1. Open GitHub in a Web browser and select your topic branch.
 
-4.1. Open Bitbucket in a Web browser:
+4.2. Follow the instructions in the pull request template and submit it.
 
-https://onestash.verizon.com/projects/GTSAP/repos/generator-git-repo/browse
-
-4.2. Select your topic branch.
-
-4.3. Select "Pull requests" where
-
-* **SOURCE** is your topic branch, and
-* **DESTINATION** is `develop`.
-
-Select the Continue button.
-
-![Bitbucket pull request dialog][readme-bitbucket-create-pr-image]
-
-4.4. Give your pull request a
-
-* Title
-* Description
-* Reviewers (add at least two members from the core team)
-
-![Bitbucket pull request inputs][readme-bitbucket-create-pr-inputs-image]
-
-Now all pushes to your topic branch will appear in your pull request.
+> #### :raising_hand: Working on your first Pull Request?
+>
+> You can learn how from this *free* series
+> [How to Contribute to an Open Source Project on GitHub][pr-course-url].
 
 ## 5. `conventional commit messages` and change `types`
-> This project enforces _[AngularJS Git Commit Guidelines][git-commit-guidelines-url]_ (aka [`conventional commit messages`][git-commit-guidelines-url]) with [`commitplease`][commitplease-url] pre-commit hooks.
+
+This project enforces [AngularJS Git Commit Guidelines][git-commit-guidelines-url] (aka [`conventional commit messages`][git-commit-guidelines-url]) with [`commitplease`][commitplease-url] pre-commit hooks.
 >
-> This not only results in consistent, legible Git logs, but also enables automated CHANGELOG generation and semantic versioning with [`standard-version`][standard-version-url]; read the how-to [Automate CHANGELOGs and semantic versioning](https://oneconfluence.verizon.com/x/SnMnDg) for details.
+> Consistent, legible Git logs not only facilitate communication, but also enable automated CHANGELOG generation and semantic versioning with [`standard-version`][standard-version-url].
 
 ### 5.1. `build` commit messages
 
@@ -313,7 +228,7 @@ This reverts commit <hash>.
 
 ### 5.10. `style` commit messages
 
-Issues related to style guideline compliance, especially `PHP_CodeSniffer` errors and warnings. The AngularJS Git commit message format is
+Issues related to style guideline compliance, especially `ESLint` errors and warnings. The AngularJS Git commit message format is
 
 ```
 
@@ -338,20 +253,26 @@ test(<scope>): <subject>
 ```
 
 ## 6. Development
-> The OneAPI Developer Portal will be the virtual home of Verizon's internal API community, as well as the e-commerce and consumption store for external customers.
->
-> It is therefore crucial to follow strong engineering standards to assure quality and performance.
+`generator-git-repo` is dedicated to enabling best practices. It is therefore crucial that the generator itself follows strong engineering standards to assure quality and performance.
 
 ### 6.1. Code standards
 
-* **[Drupal Coding Standards](https://www.drupal.org/docs/develop/standards)**: The source code for this project should follow Drupal Coding Standards.
-* **[`PHP_CodeSniffer`][php-codesniffer-url]**: We will add `PHP_CodeSniffer` to automatically [lint our source code][lint-software-url] during Sprint 0.
+ESLint evaluates Javascript code standards before each test run with the `npm-script pretest`.
+Heres' a [table of `generator-git-repo's` ESLint rules][eslint-rules-table-url] and their enforcement.
 
 ### 6.2. Testing
 
-> Write specs (i.e., unit tests). Behavior-driven development specifications are executable documentation. By the way, 100% code coverage is the norm, not the exception.
+> ##### :100: Write specs (i.e., unit tests).
+>
+> Behavior-driven development specifications are executable documentation. By the way, 100% code coverage is the norm, not the exception.
 
-We will add the [`behat`][behat-url] framework for [Behavior-Driven Development (BDD)][bdd-url]  specs (née unit tests) during Sprint 0.
+Open a terminal and run
+
+```bash
+
+$ npm test
+
+```
 
 Thank you for contributing, and welcome to the community!
 
@@ -359,19 +280,21 @@ Thank you for contributing, and welcome to the community!
 
 2017, [Greg Swindle](mailto:gregory.jay.swindle@verizon.com).
 
+
 [bdd-url]: https://en.wikipedia.org/wiki/Behavior-driven_development
 [behat-url]: http://behat.org/en/latest/
 [branch-name-test-url]: https://regex101.com/
 [commitplease-url]: https://www.npmjs.com/package/commitplease
+[eslint-rules-table-url]: ESLINT_RULES.md
 [git-commit-guidelines-url]: https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit
-[jira-dp-epic-url]: https://onejira.verizon.com/secure/RapidBoard.jspa?rapidView=46863&projectKey=ONEAPI&view=planning.nodetail&selectedEpic=ONEAPI-120
+[issues-new-url]: https://github.com/gregswindle/generator-git-repo/issues/new
+[issues-url]: https://github.com/gregswindle/generator-git-repo/issues
 [label-status-available-url]: ../labels/Status%3A%20Available
 [lint-software-url]: https://en.wikipedia.org/wiki/Lint_(software)
+[makeapullrequest-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[makeapullrequest-url]: http://makeapullrequest.com
 [new-issue-url]: https://oneconfluence.verizon.com/x/So_PCw
-[php-codesniffer-url]: https://github.com/squizlabs/PHP_CodeSniffer
-[readme-jira-issue-create-branch-image]: ./assets/img/readme-jira-issue-create-branch.png
-[readme-bitbucket-create-branch-image]: ./assets/img/readme-bitbucket-create-branch.png
-[readme-bitbucket-create-pr-image]: ./assets/img/readme-bitbucket-create-pr-inputs.png
-[readme-bitbucket-create-pr-inputs-image]: ./assets/img/readme-bitbucket-create-pr.png
-[readme-jira-issue-select-repo-topic-image]: ./assets/img/readme-jira-issue-select-repo-topic.png
+[php-codesniffer-url]: https://github.com/squizlabs/ESLint
+[pr-course-url]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
+[pr-url]: https://github.com/gregswindle/generator-git-repo/pulls
 [standard-version-url]: https://github.com/conventional-changelog/standard-version
