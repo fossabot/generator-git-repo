@@ -1,0 +1,98 @@
+{
+  "name": "generator-git-repo",
+  "version": "0.0.0",
+  "description": "Initialize and add remote origin for Bitbucket, Bitbucket-Server, GitHub, and GitHub Enterprise repositories.",
+  "homepage": "https://github.com/gregswindle/generator-git-repo",
+  "author": {
+    "name": "Greg Swindle",
+    "email": "greg@swindle.net",
+    "url": "https://github.com/gregswindle"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman",
+    "yeoman-generator",
+    "git",
+    "git-init",
+    "init",
+    "origin",
+    "remote",
+    "bitbucket",
+    "bitbucket-server",
+    "github",
+    "github-enterprise"
+  ],
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "commitplease": "^2.7.10",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.2.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "eslint-index": "^1.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jsdoc": "^3.1.1",
+    "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
+    "eslint-plugin-no-unsanitized": "^2.0.1",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-scanjs-rules": "^0.1.5",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-xss": "^0.1.8",
+    "git-remote-origin-url": "^2.0.0",
+    "hosted-git-info": "^2.5.0",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "nsp": "^2.6.3",
+    "standard-version": "^4.2.0",
+    "uglify-js": "^3.0.24",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.6.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
+    "yosay": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest --config=jest.config.json",
+    "release": "standard-version"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "https://github.com/gregswindle/generator-git-repo.git",
+  "license": "Apache-2.0",
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "build",
+      "chore",
+      "ci",
+      "docs",
+      "feat",
+      "fix",
+      "perf",
+      "refactor",
+      "revert",
+      "style",
+      "test"
+    ],
+    "scope": "\\S+.*"
+  }
+}
