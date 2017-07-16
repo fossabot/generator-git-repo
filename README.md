@@ -93,11 +93,13 @@ The results are displayed real-time with README badges.
 
 ## 5. License
 
-[Apache-2.0][license-url] © [Greg Swindle](https://github.com/gregswindle)
+[![License][license-image]][license-url]  © [Greg Swindle](https://github.com/gregswindle)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fgregswindle%2Fgenerator-git-repo.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fgregswindle%2Fgenerator-git-repo?ref=badge_large)
 
 ---
 
-[![License][license-image]][license-url] [![FOSSA Status][fossa-image]][fossa-url] [![Readme Score][readme-score-img]][readme-score-url] [![Greenkeeper][greenkeeper-img]][greenkeeper-url]
+[![Readme Score][readme-score-img]][readme-score-url] [![Greenkeeper][greenkeeper-img]][greenkeeper-url]
 
 
 [author-url]: https://github.com/gregswindle
