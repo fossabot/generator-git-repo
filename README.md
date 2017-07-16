@@ -123,8 +123,8 @@ The results are displayed real-time with README badges.
 [npm-image]: https://badge.fury.io/js/generator-git-repo.svg
 [npm-url]: https://npmjs.org/package/generator-git-repo
 [npm-url]: https://npmjs.org/package/generator-git-repo
-[nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/a3912719-529f-457f-9ff6-53fa70d8f475/badge
-[nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/a3912719-529f-457f-9ff6-53fa70d8f475
+[nsp-img]: https://nodesecurity.io/orgs/gregswindle/projects/6334c8c5-06d5-411c-9722-8b98350818b3/badge
+[nsp-url]: https://nodesecurity.io/orgs/gregswindle/projects/6334c8c5-06d5-411c-9722-8b98350818b3
 [pr-url]: https://github.com/gregswindle/generator-git-repo/pulls
 [readme-score-img]: http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/gregswindle/generator-git-repo
 [readme-score-url]: http://clayallsopp.github.io/readme-score?url=https://github.com/gregswindle/generator-git-repo
